@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5769B1C1-AF68-4891-8BCB-2DE1B5E4BAE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kull.DX</RootNamespace>
+    <AssemblyName>Kull.DX</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseGrapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light\Circle3dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light\Circle3dForm.Designer.cs">
+      <DependentUpon>Circle3dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light\Squer3dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light\Squer3dForm.Designer.cs">
+      <DependentUpon>Squer3dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light\Triangle3dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light\Triangle3dForm.Designer.cs">
+      <DependentUpon>Triangle3dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meshs\TeapotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meshs\TeapotForm.Designer.cs">
+      <DependentUpon>TeapotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meshs\TextureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Meshs\TextureForm.Designer.cs">
+      <DependentUpon>TextureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\CircleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\CircleForm.Designer.cs">
+      <DependentUpon>CircleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\Squer3dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\Squer3dForm.Designer.cs">
+      <DependentUpon>Squer3dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\SquerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\SquerForm.Designer.cs">
+      <DependentUpon>SquerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\Triangle2dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\Triangle2dForm.Designer.cs">
+      <DependentUpon>Triangle2dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\Triangle3dForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\Triangle3dForm.Designer.cs">
+      <DependentUpon>Triangle3dForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polygon\VertexBufferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polygon\VertexBufferForm.Designer.cs">
+      <DependentUpon>VertexBufferForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Polygon\CircleForm.resx">
+      <DependentUpon>CircleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polygon\Triangle2dForm.resx">
+      <DependentUpon>Triangle2dForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polygon\VertexBufferForm.resx">
+      <DependentUpon>VertexBufferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Textures\ImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Textures\ImageForm.Designer.cs">
+      <DependentUpon>ImageForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="0030.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
